@@ -9,12 +9,13 @@
         font-family: Arial, Helvetica, sans-serif;
     } 
     table{
-        border: 1px solid black;
+        border-collapse: collapse;
         width: 300px;
     }
     td {
         border: 1px solid black;
-        border-collapse: collapse;
+       text-align: center;
+        padding: 10px;
     }
     </style>
 </head>
@@ -22,25 +23,25 @@
     <h1>mesclagem de celulas</h1>
     <table>
         <tr>
-            <td>A</td>
-            <td>B</td>
-            <td>C</td>
+            <td >A</td>
+            <td colspan="2">B</td>
+           
         </tr>
 
         <tr>
-            <td>D</td>
+            <td rowspan="3">D</td>
             <td>E</td>
             <td>F</td>
         </tr>
 
         <tr>
-            <td>G</td>
+          
             <td>H</td>
             <td>I</td>
         </tr>
 
         <tr>
-            <td>J</td>
+           
             <td>L</td>
             <td>M</td>
         </tr>
