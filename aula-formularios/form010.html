@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+
+        <p>
+            <label for="iano">Em que Ano vc nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2020" oninput="idade.innerHTML = Number (2024) - Number (iano.value)">
+        </p>
+        <p>
+            <label for="idade">Sua Idade é :</label>
+            <output id="idade">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        
+    </form>
+</body>
+</html>
